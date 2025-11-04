@@ -59,12 +59,6 @@ To quantify and visualize the global impact of COVID-19 by analyzing:
 - Removed null and continent-level aggregates to focus on country data.  
 - Casted numerical fields properly to ensure arithmetic consistency.
 
-```sql
-SELECT *
-FROM CovidDeaths
-WHERE continent IS NOT NULL
-ORDER BY location, date;
-
 ### 3⃣ KPI Calculation — Total Cases, Deaths & Mortality Rate
 
 
@@ -74,7 +68,3 @@ ORDER BY location, date;
 
 ### 7⃣ Creating Views for Tableau
 
-
----
-
-### ✅ Recommended Folder Structure
